@@ -2,7 +2,6 @@ import React from 'react';
 import { Loading } from './LoadingComponent';
 import { FadeTransform } from 'react-animation-components';
 import { Card, CardImg, CardText, CardBody, CardTitle } from 'reactstrap';
-import { baseUrl } from '../shared/baseUrl';
 
 function ProductList(props) {
 	if (props.isLoading) {
@@ -26,7 +25,7 @@ function ProductList(props) {
 	} else if (props.products != null) {
 		const products = props.products.products;
 		const productsList = products.map((product, i) => {
-			const image = product.images.filter((image) => image.main)[0];
+			const image = product.featuredImage;
 			return(
 				<div className="col-12 col-md m-1" key={i}>
 					<FadeTransform in 
@@ -34,10 +33,10 @@ function ProductList(props) {
 							exitTransform: 'scale(0.5) translateY(-50%)'
 						}} >
 						<Card>
-							<CardImg src={image.src} alt={image.alt} width="300" height="300" />
+							<CardImg src={image ? image.src : ''} alt={image ? image.alt: ''} width="300" height="300" />
 							<CardBody>
 								<CardTitle>{product.name}</CardTitle>
-								<CardText>{product.description}</CardText>
+								<CardText>{product.description ? product.description.substring(0, 100) : '' }{' ...'}</CardText>
 							</CardBody>
 						</Card>
 					</FadeTransform>

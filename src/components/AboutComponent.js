@@ -14,7 +14,8 @@ function About() {
 					</div>
 					<div className="col-12 col-md-8">
 						<p align="justify">
-							It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+							Aconel es una empresa dedicada a la compra-venta de productos de automatización industrial y ofrece servicios de soporte y mantenimiento técnico de maquinaria industrial.
+							La misión de aconel es ser una empresa líder en la comercialización de productos de automatización, satisfaciendo las necesidades de nuestro clientes, ofreciéndoles productos y servicios de calidad.
 						</p>
 					</div>
 				</div>
@@ -24,7 +25,7 @@ function About() {
 					</div>
 					<div className="col-12 col-md-8">
 						<p align="justify">
-							It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+							Ser el mayor distribuidor a nivel nacional de tecnologías de automatización.
 						</p>
 					</div>
 				</div>

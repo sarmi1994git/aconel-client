@@ -3,7 +3,6 @@ import { Breadcrumb, BreadcrumbItem, Media } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { Fade, Stagger} from 'react-animation-components';
 import { Loading } from './LoadingComponent';
-import { baseUrl } from '../shared/baseUrl';
 
 function Service(props) {
 	if (props.isLoading) {
@@ -25,7 +24,7 @@ function Service(props) {
         );
     }
     else if (props.services != null) {
-    	const services = props.services.map((service, i) => {
+    	const services = props.services.services.map((service, i) => {
             return (
                 <Fade in key={i}>
                     <RenderService service={service} />
@@ -59,12 +58,12 @@ function Service(props) {
 }
 
 function RenderService(props) {
-	const image = props.service.images.filter((image) => image.main)[0];
+	const image = props.service.images.length > 0 ? props.service.images[0] : null;
 	return(
         <div key={props.service.id} className="col-12 mt-5">
             <Media tag="li">
                 <Media left middle>
-                    <Media object src={image.src} alt={image.alt} width="192" height="192" />
+                    <Media object src={image ? image.src : ''} alt={image ? image.alt: ''} width="192" height="192" />
                 </Media>
                 <Media body className="ml-5">
                     <Media heading>{props.service.name}</Media>

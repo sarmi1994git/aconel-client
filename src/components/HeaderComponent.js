@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Nav, NavItem, Navbar, NavbarBrand, NavbarToggler, Collapse, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
+import { Nav, NavItem, Navbar, NavbarToggler, Collapse, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import { Loading } from './LoadingComponent';
-import { localUrl } from '../shared/localUrl';
 import '../styles/Nav.css';
 
 class Header extends Component {

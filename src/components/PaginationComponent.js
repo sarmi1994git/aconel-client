@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button } from 'reactstrap';
-import { Loading } from './LoadingComponent';
 
 function Pagination({increment, decrement, page, totalPages, products}) {
 	if (products.products == null || products.products.length <= 0) {

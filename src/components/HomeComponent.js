@@ -1,5 +1,4 @@
 import React from 'react';
-import { Loading } from './LoadingComponent';
 import Slide from './SlideComponent';
 import { NavLink } from 'react-router-dom';
 
